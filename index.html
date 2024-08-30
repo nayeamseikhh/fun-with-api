@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun with api</title>
+</head>
+<body>
+    <h1>Get explore Fun with API</h1>
+    <h1 id="activity"></h1>
+    <h3>Learn from: <a id="explore_link" href="">Visit the place</a></h3>
+    <script>
+        // fetch('https://bored-api.appbrewery.com/random')
+        // .then(res => res.json())
+        // .then(data => {
+        //     document.getElementById('activity').innerText = data.activity;
+        // })
+
+        fetch('https://bored-api.appbrewery.com/random')
+        .then(response => response.json())
+        .then(data => {
+         document.getElementById('activity').innerText = data.activity;
+      })
+    </script>
+</body>
+</html>
